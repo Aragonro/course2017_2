@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign In</title>
+	<meta charset="utf-8" />
+    <script type="text/javascript" src="Scripts/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body style="width:100%;background-image:url(Images/mainimage.jpg);">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="Main.html" style="font-family: 'Times New Roman', Times, serif; font-style: italic; ">EmulCur</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="SignUp.html"> Sign Up</a></li>
+                <li><a href="SignIn.html"> Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div style="width:25%;margin: 0 auto;margin-top: 100px;text-align: center;background-color:cadetblue;" class="form-horizontal">
+        <form id="form">
+            <div id="legend">
+                <legend class="">Sign In</legend>
+            </div>
+
+            <div class="control-group">
+                <!-- E-mail -->
+                <label class="control-label" for="email">E-mail</label>
+                <div class="controls">
+                    <input type="email" id="email" name="email" class="input-xlarge" required>
+                </div>
+            </div>
+            <br />
+            <div class="control-group">
+                <!-- Password-->
+                <label class="control-label" for="password">Password</label>
+                <div class="controls">
+                    <input type="password" id="password" name="password" class="input-xlarge" required>
+           
+                </div>
+            </div>
+            <br />
+            <div class="control-group">
+                <!-- Button -->
+                <div class="controls">
+                    <input type="submit" id="submit" value="Sign In" class="btn btn-success">
+                    <p></p>
+                </div>
+            </div>
+            <br />
+        </form>
+        <p id="product" />
+
+    </div>
+    <script type="text/javascript" src="Scripts/SignIn.js"></script>
+</body>
+</html>

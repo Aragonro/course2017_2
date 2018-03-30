@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script type="text/javascript" src="Scripts/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body style="background-image:url(Images/mainimage.jpg)">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid" id="navdiv">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="Main.html" style="font-family: 'Times New Roman', Times, serif; font-style: italic; ">EmulCur</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="navulright">
+                <li><a href="Main.html">My Emulation</a></li>
+            </ul>
+
+
+        </div>
+    </nav>
+    <div style="width:25%;margin: 0 auto;margin-top: 25px;text-align: center;background-color:cadetblue;" class="form-horizontal">
+        <form id="form">
+            <div id="legend">
+                <legend class="">Emulation</legend>
+            </div>
+
+            <div class="control-group">
+                <!--Name Emulation -->
+                <label class="control-label" for="username">Name Emulation</label>
+
+                <p><input type="text" id="name" class="input-xlarge" pattern="^[a-zA-Z_0-9 ]{1,30}$" required autocomplete="off" title="Name only can have (a-z,A-Z,_,0-9) and length (1-15)"></p>
+
+            </div>
+
+            <div class="control-group">
+                <!--Name Video -->
+                <label class="control-label" for="username">Name Video</label>
+
+                <p><input type="text" id="videoname"  class="input-xlarge" pattern="^[a-zA-Z_0-9 ]{0,30}$" autocomplete="off" title="Name only can have (a-z,A-Z,_,0-9) and length (0-10)"></p>
+
+            </div>
+
+            <div class="control-group">
+                <!-- Link Video -->
+                <label class="control-label" for="username">Link Video</label>
+
+                <p><input type="text" id="videolink"  class="input-xlarge" autocomplete="off" ></p>
+
+            </div>
+          
+            <div class="control-group">
+                <!-- Temperature -->
+                <label class="control-label" for="username">Temperature(F)</label>
+
+                <p><input type="text" id="temperature"  class="input-xlarge" pattern="^[0]{0,1}[0-9]{1,3}$" autocomplete="off" title="Temperature only can have (-,0-9) and -1000 < value < 1000"></p>
+
+            </div>
+          
+            <div class="control-group">
+                <!-- Pressure -->
+                <label class="control-label" for="username">Pressure(Pa)</label>
+
+                <p><input type="text" id="pressure" class="input-xlarge" autocomplete="off" pattern="^[0-9]{0,7}$"  title="Pressure only can have (0-9) and 0 <= value < 1000000"></p>
+
+            </div>
+      
+            <div class="control-group">
+                <!-- Humidity -->
+                <label class="control-label" for="username">Humidity(%)</label>
+
+                <p><input type="text" id="humidity" class="input-xlarge" autocomplete="off" pattern="^[0-9]{0,2}$" title="Humidity only can have (0-9) and 0 <= value < 100"></p>
+
+            </div>
+     
+            <div class="control-group">
+                <!-- Button -->
+                <div class="controls">
+                    <input type="submit" id="submit" value="Add Emulation" class="btn btn-success">
+                    <p></p>
+                </div>
+            </div>
+            <br />
+        </form>
+    </div>
+    <script type="text/javascript" src="Scripts/AddEmulation.js"></script>
+</body>
+</html>
